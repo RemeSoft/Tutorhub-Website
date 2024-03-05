@@ -1,0 +1,31 @@
+/* for mobile screen  */
+@media only screen and (min-width: 576px) {
+
+  }
+
+  /* For Tablet Screen */
+@media only screen and (min-width: 768px) {
+/*
+|-------------------------------------------------
+|  Header Start [ 05 Mar, 2024 ]
+|----------------------------------- */
+    .header__left-hamburger{
+        display: none;
+    }
+    .header__right-icon{
+        display: none;
+    }
+    .header__right-menu{
+        display: block;
+    }
+
+
+
+  }
+
+
+/* for desktop screen  */
+@media only screen and (min-width: 1200px) {
+
+
+  }

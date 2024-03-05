@@ -1,0 +1,111 @@
+:root{
+    --header-size: 60px;
+}
+/*
+|-------------------------------------------------
+|  Custom CSS Goes Here [ 05 Mar, 2024 ]
+|-----------------------------------
+| Please remember, always use BEM for class name. If you are facing 
+| problem using bem :
+|
+| 1. Go to https://chat.openai.com/
+| 2. Past your markup
+| 3. Run command "Convert my classes into BEM"
+| 4. Or you can checkout previous code.
+|
+*/
+
+
+/*
+|-------------------------------------------------
+|  Header Start [ 05 Mar, 2024 ]
+|----------------------------------- */
+.header{
+    background-color: lightpink;
+    display: flex;
+    align-items: center;
+    height: var(--header-size);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: .5s;
+}
+.header--hidden{
+    transform: translateY(-100%);
+}
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__left{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header__left-hamburger{
+    background-color: transparent;
+    border: 0;
+}
+.brand--logo{
+    width: 100px;
+}
+.header__right-menu{
+    display: none;
+}
+.header__right-icon__list,
+.header__right-menu__list{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+    margin: auto 0;
+}
+.header__right-icon__link,
+.header__right-menu__link{
+    color: black;
+    text-decoration: none;
+}
+/*
+|-------------------------------------------------
+|  Sidebar Start [ 05 Mar, 2024 ]
+|----------------------------------- */
+.sidebar{
+    height: 100vh;
+    background-color: green;
+    margin-top: var(--header-size);
+    position: fixed;
+    width: 75vw;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: .5s;
+}
+
+/*
+|-------------------------------------------------
+|  Main Start [ 05 Mar, 2024 ]
+|----------------------------------- */
+.main{
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+.main__content{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    margin-top: var(--header-size);
+}
+
+/*
+|-------------------------------------------------
+|  Footer Start [ 05 Mar, 2024 ]
+|----------------------------------- */
+
